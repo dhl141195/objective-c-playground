@@ -1,10 +1,22 @@
 #import <Foundation/Foundation.h>
 
-int (^sum)(int, int) = ^(int num1, int num2) {
-  return num1 + num2;
-};
+typedef void(^CallbackBlock)(void);
+
+@interface SampleClass:NSObject
+- (void) doSomething:(CallbackBlock) cb;
+@end
+
+@implementation SampleClass
+- (void) doSomething:(CallbackBlock)cb {
+  NSLog(@"Do something");
+  cb();
+}
+@end
 
 int main() {
-  NSLog(@"The result is %d", sum(1, 2));
+  SampleClass *sc = [[SampleClass alloc] init];
+  [sc doSomething:^{
+    NSLog(@"Done something");
+  }];
   return 0;
 }
