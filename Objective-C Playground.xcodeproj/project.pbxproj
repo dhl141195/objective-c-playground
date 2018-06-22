@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		CFBD693020AD2FF300E36E48 /* Objective-C Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C Playground"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFBD693320AD2FF300E36E48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFBD693320AD2FF300E36E48 /* main.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
