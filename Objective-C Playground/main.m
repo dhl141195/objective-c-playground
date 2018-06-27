@@ -1,11 +1,12 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char *argv[]) {
-  __block int i = 0;
+  int i = 0;
+  int *ptr = &i;
 
   void (^testClosure)(void) = ^{
-    NSLog(@"%d", i);
-    i = 2;
+    NSLog(@"%d", *ptr);
+    *ptr = 2;
   };
 
   i = 1;
