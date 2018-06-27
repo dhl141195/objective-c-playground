@@ -1,15 +1,16 @@
 #import <Foundation/Foundation.h>
 
-typedef int (^ActionBlock)(int, int);
-
-int sum(int num1, int num2, ActionBlock actionBlock) {
-  return actionBlock(num1, num2);
-}
-
-int main() {
-  int result = sum(1, 3, ^(int num1, int num2) {
-    return num1 + num2;
-  });
-  NSLog(@"%d", result);
+int main(int argc, const char *argv[]) {
+  // Declare the block variable
+  double (^distanceFromRateAndTime)(double rate, double time);
+  
+  // Create and assign the block
+  distanceFromRateAndTime = ^double(double rate, double time) {
+    return rate * time;
+  };
+  // Call the block
+  double dx = distanceFromRateAndTime(35, 1.5);
+  
+  NSLog(@"A car driving 35 mph will travel %.2f miles in 1.5 hours.",dx);
   return 0;
 }
