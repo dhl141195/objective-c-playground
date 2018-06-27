@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CF7C29A620E3784D0022C360 /* InventoryErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InventoryErrors.h; sourceTree = "<group>"; };
 		CFBD693020AD2FF300E36E48 /* Objective-C Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C Playground"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBD693320AD2FF300E36E48 /* main.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CFBD693320AD2FF300E36E48 /* main.m */,
+				CF7C29A620E3784D0022C360 /* InventoryErrors.h */,
 			);
 			path = "Objective-C Playground";
 			sourceTree = "<group>";
