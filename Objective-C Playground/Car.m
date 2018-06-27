@@ -2,16 +2,21 @@
 
 @interface Car ()
 - (BOOL)engineIsWorking;
+@property(readwrite) double odometer;
 @end
 
 @implementation Car
-
-@synthesize model = _model;
 
 -(BOOL)engineIsWorking{
   return true;
 }
 - (void)startEngine {
+
+    // this line work because we re-declared odometer as readwrite property
+    self.odometer = 2.2;
+    // otherwise we have to
+    // _odometer = 2.2;
+    
     if ([self engineIsWorking]) {
         NSLog(@"Starting the %@'s engine", _model);
     }
