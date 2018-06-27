@@ -1,13 +1,14 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char *argv[]) {
-  NSString* (^saySomething)(void);
-  
-  saySomething = ^{
-    return @"Im a block";
+  int i = 0;
+
+  void (^testClosure)(void) = ^{
+    NSLog(@"%d", i);
   };
 
-  NSLog(@"%@", saySomething());
+  i = 1;
+  testClosure(); // print 0
 
   return 0;
 }
