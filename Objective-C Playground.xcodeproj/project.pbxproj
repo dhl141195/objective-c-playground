@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF7C299520E324560022C360 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7C299420E324560022C360 /* Car.m */; };
+		CF7C299920E324F50022C360 /* Car+Maintenance.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7C299820E324F50022C360 /* Car+Maintenance.m */; };
 		CFBD693420AD2FF300E36E48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBD693320AD2FF300E36E48 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CF7C299420E324560022C360 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		CF7C299620E324620022C360 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		CF7C299720E324F50022C360 /* Car+Maintenance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Car+Maintenance.h"; sourceTree = "<group>"; };
+		CF7C299820E324F50022C360 /* Car+Maintenance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Car+Maintenance.m"; sourceTree = "<group>"; };
 		CFBD693020AD2FF300E36E48 /* Objective-C Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C Playground"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBD693320AD2FF300E36E48 /* main.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				CFBD693320AD2FF300E36E48 /* main.m */,
+				CF7C299720E324F50022C360 /* Car+Maintenance.h */,
+				CF7C299820E324F50022C360 /* Car+Maintenance.m */,
+				CF7C299420E324560022C360 /* Car.m */,
+				CF7C299620E324620022C360 /* Car.h */,
 			);
 			path = "Objective-C Playground";
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7C299920E324F50022C360 /* Car+Maintenance.m in Sources */,
+				CF7C299520E324560022C360 /* Car.m in Sources */,
 				CFBD693420AD2FF300E36E48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
