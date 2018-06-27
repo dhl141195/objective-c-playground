@@ -1,17 +1,20 @@
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char *argv[]) {
-  int i = 0;
-  int *ptr = &i;
+@interface SampleClass:NSObject
+- (void) doSomething:(void(^)(void)) cb;
+@end
 
-  void (^testClosure)(void) = ^{
-    NSLog(@"%d", *ptr);
-    *ptr = 2;
-  };
+@implementation SampleClass
+- (void)doSomething:(void (^)(void))cb {
+  NSLog(@"Do something");
+  cb();
+}
+@end
 
-  i = 1;
-  testClosure(); // print 1
-
-  NSLog(@"%d", i); // print 2
+int main() {
+  SampleClass *sc = [[SampleClass alloc] init];
+  [sc doSomething:^{
+    NSLog(@"Done something");
+  }];
   return 0;
 }
